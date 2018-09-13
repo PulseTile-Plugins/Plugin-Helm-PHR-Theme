@@ -1,0 +1,27 @@
+{
+  "name": "plugin-helm-phr-theme",
+  "version": "1.0.0",
+  "description": "repo for Helm PHR theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-images": "cpx \"assets/images/**/*.*\" \"../Helm-PHR-Generator/PulseTile-React-Core/src/assets/images\" --watch --verbose",
+    "watch-styles": "cpx \"assets/themes/**/*.*\" \"../Helm-PHR-Generator/PulseTile-React-Core/src/styles/themes\" --watch --verbose",
+    "watch": "concurrently --kill-others \"npm run watch-images\" \"npm run watch-styles\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simongamester/Plugin-Helm-PHR-Theme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simongamester/Plugin-Helm-PHR-Theme/issues"
+  },
+  "homepage": "https://github.com/simongamester/Plugin-Helm-PHR-Theme#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "^4.0.1",
+    "cpx": "^1.5.0"
+  }
+}
