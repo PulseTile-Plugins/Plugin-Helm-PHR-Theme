@@ -1,3 +1,9 @@
 & {
-  font-family: 'HK_Grotesk_Regular';
+  font-family: $font-regular;
+}
+
+.page {
+  background: $background-rings #F2F2F2;
+  background-size: cover;
+  position: left bottom;
 }

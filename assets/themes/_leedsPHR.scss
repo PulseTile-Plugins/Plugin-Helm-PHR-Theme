@@ -122,7 +122,7 @@ $header-toolbar: (
 /**
   * COLORS for panels
   */
-  $panel-border-color: #d4d2d2;
+  $panel-border-color: #E5E5E5;
   $panel-heading-bg: $base-color;
   $panel-heading-color: $text-on-base-color;
   $panel-control-bg: transparent;
@@ -197,7 +197,22 @@ $header-toolbar: (
     control-static-color: #333,
   );
 
+// Custom Fonts
 @import 'theme-leedsPHR/custom-fonts';
+
+$font-bold: 'HK_Grotesk_Bold', sans-serif;
+$font-light: 'HK_Grotesk_Light', sans-serif;
+$font-medium: 'HK_Grotesk_Medium', sans-serif;
+$font-semibold: 'HK_Grotesk_SemiBold', sans-serif;
+$font-regular: 'HK_Grotesk_Regular', sans-serif;
+
+// Bas64 encoded images
+@import 'theme-leedsPHR/images';
+
+/* Contains:
+  $background-rings
+*/
+
 
 body.themeLeedsPHR {
   @import 'theme-source/index';
