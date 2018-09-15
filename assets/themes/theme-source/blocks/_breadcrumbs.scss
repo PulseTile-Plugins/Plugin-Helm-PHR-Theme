@@ -9,9 +9,10 @@
 	padding: 10px 2px 11px 2px;
 
 	// Todo: Remove this after updating html in core
-	span:first-child {
+	> span:first-child {
 		display: none;
 	}
+
 }
 
 .breadcrumb-separate {

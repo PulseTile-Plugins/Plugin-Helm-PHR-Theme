@@ -15,10 +15,15 @@
   color: $base-color;
 }
 
+.btn-toggle-sidebar:hover {
+  background: $base-color;
+  color: $text-on-base-color;
+}
+
 @include respond-from(sm) {
   .is-not-touch-device .btn-toggle-sidebar:hover {
-    background: $text-on-base-color;
-    color: $base-color;
+    background: $base-color;
+    color: $text-on-base-color;
   }
 }
 .sidebar-nav-item {

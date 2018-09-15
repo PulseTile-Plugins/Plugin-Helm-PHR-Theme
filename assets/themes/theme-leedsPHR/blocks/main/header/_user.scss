@@ -1,10 +1,10 @@
 .dropdown-user {
-  width: 300px;
+  width: 220px;
   border-radius: 0 0 4px 4px;
 
   .user-profile-info {
     font-size: 12px;
-    line-height: 14px;
+    line-height: 1.6em;
   }
   .specification {
     border-bottom: none;
@@ -12,18 +12,20 @@
   .user-profile-info__item {
     margin-bottom: 0;
     font-size: 13px;
-    line-height: 15px;
-    color: #717171;
+    line-height: 1.6em;
+    color: $text-color;
+
     &.name {
       margin-bottom: 7px;
       color: $text-color;
-      font-weight: 400;
-      font-size: 16px;
+      font-family: $font-semibold;
+      font-size: 18px;
     }
     &.role,
     &.version-back { font-style: normal; }
     &.birthday {
       font-style: normal;
+      color: $text-color;
     }
   }
   .user-profile-info__title {
@@ -36,13 +38,14 @@
 
   .btn-signout {
     width: auto;
-    font-size: 14px;
+    height: 36px;
+    font-size: 16px;
     padding-left: 20px;
     padding-right: 20px;
     background-color: $base-color !important;
     color: #fff !important;
     border-radius: 25px;
-    margin-top: 25px;
+    margin-top: 15px;
     i {
       font-size: 14px;
       margin-left: 8px;

@@ -11,6 +11,7 @@
 .inner-addon .addon {
   height: 36px;
   line-height: 36px;
+  color: $base-color;
 }
 
 @include respond-from(xs) {

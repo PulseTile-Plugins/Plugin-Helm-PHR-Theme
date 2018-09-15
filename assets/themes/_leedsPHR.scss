@@ -3,7 +3,7 @@ $lucky-point: #fff;
 $white: #ffffff;
 
 $base-color: $dodger-blue;
-$auxiliary-color: $lucky-point;
+$auxiliary-color: $base-color;
 
 $table-color: lighten($base-color, 40%);
 $table-text: #3E3E3E;
@@ -69,7 +69,7 @@ $header-btn: (
     color: $text-on-base-color,
     bg-hover: $lucky-point,
     color-hover: $text-on-base-color,
-    bg-active: $lucky-point,
+    bg-active: $base-color,
     color-active: $text-on-base-color
 );
 $header-toolbar: (
