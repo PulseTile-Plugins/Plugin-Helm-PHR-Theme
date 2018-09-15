@@ -5,8 +5,8 @@ $white: #ffffff;
 $base-color: $dodger-blue;
 $auxiliary-color: $lucky-point;
 
-$table-color: lighten($base-color, 40%);;
-$table-text: #5c5c5c;
+$table-color: lighten($base-color, 40%);
+$table-text: #3E3E3E;
 $colored-table: (
   bg: #ffffff,
   color: $table-text,
@@ -196,6 +196,8 @@ $header-toolbar: (
     label-required-color: #a32d44,
     control-static-color: #333,
   );
+
+@import 'theme-leedsPHR/custom-fonts';
 
 body.themeLeedsPHR {
   @import 'theme-source/index';

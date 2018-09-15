@@ -1,2 +1,5 @@
 .wrap-header-toolbar { background: map-get($header-toolbar, 'bg'); }
-.header-toolbar { color: map-get($header-toolbar, 'color'); }
+.header-toolbar {
+  color: $table-text;
+  padding-left: 187px;
+}
