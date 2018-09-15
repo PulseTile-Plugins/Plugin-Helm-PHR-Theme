@@ -5,17 +5,87 @@
   margin-bottom: 22px;
 }
 .board {
-  box-shadow: 0 1px 1px rgba(#000, 0.21);
+  box-shadow: 0 1px 8px rgba(0,0,0, 0.2);
+  border: none;
+  border-radius: 0;
+
+  .control-group.right {
+    position: absolute;
+    top: 34px;
+    right: 8px;
+  }
 }
 .board-header {
-  padding: 5px 8px;
+  padding: 34px 25px 0 25px;
+  position: relative;
   // border-bottom: 2px solid #00aeef;
   border: none;
+  background-color: $base-color;
+  height: 100px;
+  margin-top: 0;
+  display: block;
   @include clearfix;
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    background: $blue-ring 0 0 repeat;
+    background-size: contain;
+  }
+
 }
+
+// Apply random changes to positioning and rotation incrementally
+
+// First of 5
+.dashboard-item:nth-child(5n-4){
+  .board-header:before {
+    transform: translate(0,-240px);
+  }
+}
+
+// Second of 5
+.dashboard-item:nth-child(5n-3){
+  .board-header:before {
+    transform: translate(120px,-120px);
+  }
+}
+
+// Third of 5
+.dashboard-item:nth-child(5n-2){
+  .board-header:before {
+    transform: rotate(69deg) translate(-59px,31px);
+  }
+}
+
+// Forth of 5
+.dashboard-item:nth-child(5n-1){
+  .board-header:before {
+    transform: rotate(-110deg) translate(229px,89px);
+  }
+}
+
+// Fifth of 5
+.dashboard-item:nth-child(5n){
+  .board-header:before {
+    transform: rotate(90deg) translate(-27px,10px);
+  }
+}
+
 .board-title {
   font-size: 18px;
   line-height: 26px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  text-align: center;
   @include text-truncate;
 }
 
@@ -35,5 +105,10 @@
   width: 26px;
   min-width: 10px;
   font-size: 22px;
-  i {color: #fff!important;}
+  position: relative;
+  z-index: 1;
+
+  i {
+    color: #fff !important;
+  }
 }
