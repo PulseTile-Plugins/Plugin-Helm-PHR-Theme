@@ -1,5 +1,7 @@
 .table thead tr th {
   padding: 11px 4px 11px 5px;
+  font-family: $font-semibold;
+  
   @include respond-from(sm) {
     padding: 11px 4px 11px 10px;
   }
@@ -12,7 +14,9 @@
     border-bottom: map-get($colored-table, 'border-width') solid map-get($colored-table, 'border-color');
   }
 
+  box-shadow: 0 1px 8px rgba(0,0,0,0.2);
   border-bottom: 0;
+  margin-bottom: 15px;
 }
 
 .table > thead > tr > td.info,

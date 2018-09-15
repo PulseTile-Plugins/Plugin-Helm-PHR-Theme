@@ -1,12 +1,12 @@
 a,
 a:hover,
 a:focus {
-  color: $text-color;
+  color: $base-color;
 }
 
 .is-not-touch-device a:hover,
 .is-not-touch-device a:focus, {
-  color: #303030;
+  color: $base-color;
 }
 
 & {

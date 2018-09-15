@@ -133,7 +133,7 @@ $header-toolbar: (
       heading-color: $text-on-base-color,
       border-color: $base-color,
       border-width: 2px,
-      border-radius: 3px,
+      border-radius: 0,
       control-bg: $panel-control-bg
     ),
     panel-primary: (
@@ -142,7 +142,7 @@ $header-toolbar: (
       heading-color: $panel-heading-color,
       border-color: transparent,
       border-width: 0,
-      border-radius: 3px,
+      border-radius: 0,
       control-bg: transparent
     ),
     panel-secondary: (
@@ -151,7 +151,7 @@ $header-toolbar: (
       heading-color: $panel-heading-color,
       border-color: $panel-border-color,
       border-width: 1px,
-      border-radius: 3px,
+      border-radius: 0,
       control-bg: $panel-control-bg
     ),
     panel-subaccordion: (
@@ -169,7 +169,7 @@ $header-toolbar: (
       heading-color: $panel-heading-color,
       border-color: $panel-border-color,
       border-width: 1px,
-      border-radius: 3px,
+      border-radius: 0,
       control-bg: $panel-control-bg
     )
   );
@@ -212,6 +212,7 @@ $font-regular: 'HK_Grotesk_Regular', sans-serif;
 /* Contains:
   $background-rings
   $blue-ring
+  $list-background
 */
 
 
