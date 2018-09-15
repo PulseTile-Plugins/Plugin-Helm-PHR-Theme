@@ -4,5 +4,8 @@
 
 .header-toolbar {
   color: $table-text;
-  padding: 0 0 0 170px;
+
+  @include respond-from(sm) {
+    padding: 0 0 0 170px;
+  }
 }

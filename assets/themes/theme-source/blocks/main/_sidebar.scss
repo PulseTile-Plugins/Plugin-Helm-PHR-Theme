@@ -3,10 +3,12 @@
   border-right-color: $panel-border-color;
 }
 
-.btn-toggle-sidebar {
-  border: 1px solid $base-color;
-  border-radius: 25px;
-  margin-left: 32px;
+@include respond-from(sm) {
+  .btn-toggle-sidebar {
+    border: 1px solid $base-color;
+    border-radius: 25px;
+    margin-left: 32px;
+  }
 }
 
 .btn-toggle-sidebar,
@@ -20,12 +22,6 @@
   color: $text-on-base-color;
 }
 
-@include respond-from(sm) {
-  .is-not-touch-device .btn-toggle-sidebar:hover {
-    background: $base-color;
-    color: $text-on-base-color;
-  }
-}
 .sidebar-nav-item {
   border-bottom-color: #E7E7E7;
   position: relative;

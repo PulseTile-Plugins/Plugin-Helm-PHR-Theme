@@ -27,10 +27,16 @@
 .panel-primary .panel-heading { margin-bottom: 0; }
 
 .panel-dashboard {
+
   .panel-heading {
     background: transparent;
     border: 0;
-    padding: 0;
+    padding: 0 0 0 14px;
+
+    @include respond-from(sm) {
+      padding: 0;
+    }
+
     margin-bottom: 16px;
     .panel-title {
       line-height: 20px;

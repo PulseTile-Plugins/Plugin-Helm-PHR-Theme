@@ -6,6 +6,11 @@
   font-size: 13px;
   font-weight: 300;
 }
+
+.form-control-static {
+  font-size: 13px;
+}
+
 .textarea-big { height: 104px; }
 
 .inner-addon .addon {
@@ -14,6 +19,6 @@
   color: $base-color;
 }
 
-@include respond-from(xs) {
-  label.control-label { font-size: 14px; }
+label.control-label {
+  font-size: 14px;
 }
