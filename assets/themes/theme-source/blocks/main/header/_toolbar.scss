@@ -1,2 +1,11 @@
-.wrap-header-toolbar { background: map-get($header-toolbar, 'bg'); }
-.header-toolbar { color: map-get($header-toolbar, 'color'); }
+.wrap-header-toolbar {
+  background: map-get($header-toolbar, 'bg');
+}
+
+.header-toolbar {
+  color: $table-text;
+
+  @include respond-from(sm) {
+    padding: 0 0 0 170px;
+  }
+}

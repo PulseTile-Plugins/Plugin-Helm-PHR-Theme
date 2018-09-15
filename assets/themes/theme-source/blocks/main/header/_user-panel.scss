@@ -1,4 +1,6 @@
 .user-panel-item {
+  border-left: 1px solid $panel-border-color;
+  
   &.open .btn-header,
   &.active .btn-header {
     background: map-get($header-btn, 'bg-active');

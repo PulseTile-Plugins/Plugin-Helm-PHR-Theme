@@ -1,4 +1,7 @@
-label.control-label { color: map-get($forms, 'label-control-color'); }
+label.control-label {
+  color: map-get($forms, 'label-control-color');
+  font-family: $font-semibold;
+}
 .col-inline-label,
 .required-label { color: map-get($forms, 'label-color'); }
 .required-label { color: map-get($forms, 'label-required-color'); }

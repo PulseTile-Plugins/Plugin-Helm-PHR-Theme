@@ -1,6 +1,18 @@
-.wrap-breadcrumbs { background: #F7F7F7; }
+.wrap-breadcrumbs {
+	background: #fff;
+	border-top: 1px solid $panel-border-color;
+}
+
 .breadcrumbs {
 	color: $text-color;
+	font-family: $font-semibold;
+	padding: 10px 2px 11px 2px;
+
+	// Todo: Remove this after updating html in core
+	> span:first-child {
+		display: none;
+	}
+
 }
 
 .breadcrumb-separate {

@@ -1,16 +1,16 @@
 $dodger-blue: #3596f4;
-$lucky-point: #18276d;
+$lucky-point: #fff;
 $white: #ffffff;
 
 $base-color: $dodger-blue;
-$auxiliary-color: $lucky-point;
+$auxiliary-color: $base-color;
 
-$table-color: lighten($base-color, 40%);;
-$table-text: #5c5c5c;
+$table-color: lighten($base-color, 40%);
+$table-text: #3E3E3E;
 $colored-table: (
   bg: #ffffff,
   color: $table-text,
-  border-color: #d4d2d2,
+  border-color: #E5E5E5,
   border-width: 1px,
 
   header-bg: #e0e0e0,
@@ -57,7 +57,7 @@ $colored-buttons: (
 /**
   * COLORS for base configuration
   */
-$body-bg: #eee;
+// $body-bg: url('../src/assets/images/Artboard.png');
 
 /**
   * COLORS for header
@@ -69,7 +69,7 @@ $header-btn: (
     color: $text-on-base-color,
     bg-hover: $lucky-point,
     color-hover: $text-on-base-color,
-    bg-active: $lucky-point,
+    bg-active: $base-color,
     color-active: $text-on-base-color
 );
 $header-toolbar: (
@@ -122,7 +122,7 @@ $header-toolbar: (
 /**
   * COLORS for panels
   */
-  $panel-border-color: #d4d2d2;
+  $panel-border-color: #E5E5E5;
   $panel-heading-bg: $base-color;
   $panel-heading-color: $text-on-base-color;
   $panel-control-bg: transparent;
@@ -133,7 +133,7 @@ $header-toolbar: (
       heading-color: $text-on-base-color,
       border-color: $base-color,
       border-width: 2px,
-      border-radius: 3px,
+      border-radius: 0,
       control-bg: $panel-control-bg
     ),
     panel-primary: (
@@ -142,7 +142,7 @@ $header-toolbar: (
       heading-color: $panel-heading-color,
       border-color: transparent,
       border-width: 0,
-      border-radius: 3px,
+      border-radius: 0,
       control-bg: transparent
     ),
     panel-secondary: (
@@ -151,7 +151,7 @@ $header-toolbar: (
       heading-color: $panel-heading-color,
       border-color: $panel-border-color,
       border-width: 1px,
-      border-radius: 3px,
+      border-radius: 0,
       control-bg: $panel-control-bg
     ),
     panel-subaccordion: (
@@ -169,7 +169,7 @@ $header-toolbar: (
       heading-color: $panel-heading-color,
       border-color: $panel-border-color,
       border-width: 1px,
-      border-radius: 3px,
+      border-radius: 0,
       control-bg: $panel-control-bg
     )
   );
@@ -185,7 +185,7 @@ $header-toolbar: (
     readonly-bg: #fff,
     readonly-color: #555,
 
-    border-color: #c5c4c4,
+    border-color: #E5E5E5,
     border-error-color: #a94442,
     border-success-color: #2b542c,
     border-width: 1px,
@@ -196,6 +196,30 @@ $header-toolbar: (
     label-required-color: #a32d44,
     control-static-color: #333,
   );
+
+// Custom Fonts
+@import 'theme-leedsPHR/custom-fonts';
+
+$font-bold: 'HK_Grotesk_Bold', sans-serif;
+$font-light: 'HK_Grotesk_Light', sans-serif;
+$font-medium: 'HK_Grotesk_Medium', sans-serif;
+$font-semibold: 'HK_Grotesk_SemiBold', sans-serif;
+$font-regular: 'HK_Grotesk_Regular', sans-serif;
+
+// Bas64 encoded images
+@import 'theme-leedsPHR/images';
+
+/* Contains:
+  $background-rings
+  $blue-ring
+  $list-background
+  $icon-clipboard
+  $icon-flower
+  $icon-needle
+  $icon-phone
+  $icon-pill
+*/
+
 
 body.themeLeedsPHR {
   @import 'theme-source/index';

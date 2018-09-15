@@ -1,3 +1,18 @@
-.patient-info-caption {
-  color: $text-on-base-color;
+.patient-info {
+  padding: 11px 14px;
+  border-left: 1px solid $panel-border-color;
 }
+
+  .patient-info-caption {
+    color: $text-on-base-color;
+  }
+
+  .patient-info-item {
+    font-size: 13px;
+    font-family: $font-semibold;
+    font-weight: 400;
+
+    &.significant {
+      font-size: 17px;
+    }
+  }

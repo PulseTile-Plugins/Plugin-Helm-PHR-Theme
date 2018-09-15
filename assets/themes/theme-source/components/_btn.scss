@@ -19,7 +19,7 @@
   .btn-default:hover,
   .btn-default:focus,
   .btn-default:active { color: $text-color !important; }
-  
+
   .is-not-touch-device {
    .btn-#{$button}:hover {
       background-color: darken($color, 10%) !important;
@@ -78,7 +78,7 @@
 .btn-inverse.btn.disabled,
 .btn-inverse.btn[disabled],
 .is-not-touch-device .btn-inverse.btn.disabled:hover,
-.is-not-touch-device .btn-inverse.btn[disabled]:hover { 
+.is-not-touch-device .btn-inverse.btn[disabled]:hover {
   background-color: transparent !important;
   border-color: #c3c3c3 !important;
   color: #c3c3c3 !important;
@@ -113,7 +113,13 @@
 .btn-success.btn-create,
 .btn-success.btn-create:focus,
 .btn-success.btn-create:active {
-  background: #ffffff !important;
+  background: #1993EF !important;
+  font-family: $font-semibold;
+  color: #fff !important;
+  height: auto;
+  padding: 10px 24px;
+  border-radius: 30px;
+  border: none !important;
   &:hover,
-  &.active { background: #ffffff !important; }
-} 
+  &.active { background: #1993EF !important; }
+}
