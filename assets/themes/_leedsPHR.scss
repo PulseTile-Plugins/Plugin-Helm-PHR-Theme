@@ -200,8 +200,9 @@ $header-toolbar: (
 // Custom Fonts
 @import 'theme-leedsPHR/custom-fonts';
 
-$font-bold: 'HK_Grotesk_Bold', sans-serif;
-$font-light: 'HK_Grotesk_Light', sans-serif;
+// Unused font have been commented out to reduce size. To use them, please also uncomment the lines below AND @font-face within _custom-fonts.scss
+//$font-bold: 'HK_Grotesk_Bold', sans-serif;
+//$font-light: 'HK_Grotesk_Light', sans-serif;
 $font-medium: 'HK_Grotesk_Medium', sans-serif;
 $font-semibold: 'HK_Grotesk_SemiBold', sans-serif;
 $font-regular: 'HK_Grotesk_Regular', sans-serif;
