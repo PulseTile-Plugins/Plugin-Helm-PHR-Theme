@@ -46,7 +46,7 @@ $text-on-base-color: #ffffff;
 $colored-buttons: (
     default: #ffffff,
     primary: #337AB7,
-    success: #017A41,
+    success: $base-color,
     info: #31b0d5,
     warning: #F0AD4E,
     danger: #DA534F,
@@ -200,8 +200,9 @@ $header-toolbar: (
 // Custom Fonts
 @import 'theme-leedsPHR/custom-fonts';
 
-$font-bold: 'HK_Grotesk_Bold', sans-serif;
-$font-light: 'HK_Grotesk_Light', sans-serif;
+// Unused font have been commented out to reduce size. To use them, please also uncomment the lines below AND @font-face within _custom-fonts.scss
+//$font-bold: 'HK_Grotesk_Bold', sans-serif;
+//$font-light: 'HK_Grotesk_Light', sans-serif;
 $font-medium: 'HK_Grotesk_Medium', sans-serif;
 $font-semibold: 'HK_Grotesk_SemiBold', sans-serif;
 $font-regular: 'HK_Grotesk_Regular', sans-serif;

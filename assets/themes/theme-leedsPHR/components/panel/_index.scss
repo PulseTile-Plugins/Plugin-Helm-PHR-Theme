@@ -33,7 +33,7 @@
     border: 0;
     padding: 0 0 0 14px;
 
-    @include respond-from(sm) {
+    @include respond-from(xs) {
       padding: 0;
     }
 

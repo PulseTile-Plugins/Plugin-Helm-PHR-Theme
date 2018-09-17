@@ -1,5 +1,10 @@
 .dashboard {
   padding-top: 0;
+
+  @include respond-to(xs) {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
 }
 .dashboard-item {
   margin-bottom: 22px;
