@@ -28,8 +28,11 @@
 
 <script type="text/javascript">
     function InitialiseC4A() {
-        / Chat Tool /
+        /* Chat Tool */
         var Tool1 = new C4A.Tools(1);
+        Tool1.Button.DesktopCss = "position:fixed; bottom:58px; right:4px;";
+        Tool1.Button.MobileCss = "position:fixed; bottom:90px; right:12px; z-index:2147483598'";
+        Tool1.Widget.Css = "margin-right:10px; margin-bottom:58px; position:fixed; right:0; z-index:2147483599; box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2)";
         C4A.Run('575167fc-701b-4adb-91b0-b4579ff9dd56');
     }
 </script>
