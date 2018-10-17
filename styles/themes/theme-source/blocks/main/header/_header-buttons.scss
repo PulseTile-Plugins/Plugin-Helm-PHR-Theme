@@ -7,11 +7,40 @@
     background-color: map-get($header-btn, 'color');
     color:  map-get($header-btn, 'bg');
   }
-}  
-.btn-header:hover { color: map-get($header-btn, 'color'); }
-.is-not-touch-device .btn-header:hover { 
-  // background: map-get($header-btn, 'bg-hover'); 
-  // color: map-get($header-btn, 'color-hover');
-  background: #1993EF; 
-  color: #fff;
 }
+.btn-header:hover {
+  @include respond-from(md) {
+    color: map-get($header-btn, 'color');
+    background: #1993EF;
+  }
+  @include respond-to(xs) {
+    color: #1993EF;
+    background: #fff;
+  }
+  &.btn-header-prev {
+    color: map-get($header-btn, 'color');
+    background: #1993EF;
+  }
+  &.btn-home {
+    color: map-get($header-btn, 'color');
+    background: #1993EF;
+  }
+}
+.is-not-touch-device {
+  .btn-header {
+    &:hover {
+      color: map-get($header-btn, 'color');
+      background: #1993EF;
+      @include respond-from(md) {
+        color: map-get($header-btn, 'color');
+        background: #1993EF;
+      }
+      @include respond-to(xs) {
+        color: #1993EF;
+        background: #fff;
+      }
+    }
+  }
+}
+
+
