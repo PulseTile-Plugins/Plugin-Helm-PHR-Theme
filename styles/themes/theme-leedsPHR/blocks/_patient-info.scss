@@ -1,10 +1,19 @@
 .patient-info {
-  padding: 11px 14px;
-  border-left: 1px solid $panel-border-color;
+  padding: 11px 12px;
+
+  @include respond-from(sm) {
+    border-left: 1px solid $panel-border-color;
+    padding: 11px 14px;
+  }
 }
 
   .patient-info-caption {
     color: $text-on-base-color;
+
+    .text-truncate,
+    .btn-dropdown-toggle {
+      color: $text-color;
+    }
   }
 
   .patient-info-item {
