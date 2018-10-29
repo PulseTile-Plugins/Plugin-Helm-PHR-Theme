@@ -12,7 +12,7 @@ body {
 body {
   background: $body-bg;
   font-family: $font-family-main;
-  min-width: $min-width; 
+  min-width: $min-width;
 }
 
 
@@ -42,11 +42,11 @@ a:focus {
 
 .list-reset { @include list-reset; }
 
-textarea:hover, 
-input:hover, 
-textarea:active, 
-input:active, 
-textarea:focus, 
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
 input:focus,
 button:focus,
 button:active,
@@ -118,11 +118,13 @@ label:focus,
 }
 
 body {
+
   .footer, .wrapper {
     transition: opacity 1s ease, visibility 1s ease;
     opacity: 1;
     visibility: visible;
   }
+
   .main-spinner {
     display: block;
     position: fixed;
@@ -130,18 +132,29 @@ body {
     left: 0; right: 0;
     z-index: 9999;
     background: #fff;
-
     opacity: 0;
     visibility: hidden;
     transition: opacity 1s ease, visibility 1s ease, background 1s ease;
+
+    .tips {
+	    opacity: 0;
+	    visibility: hidden;
+    }
   }
+
   &.loading {
     .footer, .wrapper {
       opacity: 0;
       visibility: hidden;
     }
+
     .main-spinner {
       opacity: 1;
+      visibility: visible;
+    }
+
+    &.with-tips .tips {
+	    opacity: 1;
       visibility: visible;
     }
   }
@@ -187,6 +200,7 @@ body {
     transform: rotate(-360deg);
   }
 }
+
 .lds-css {
   left: 50%;
   position: absolute;
@@ -196,9 +210,16 @@ body {
   margin-top: -100px;
   margin-left: -100px;
 }
+
+// New
+body.loading.with-tips .lds-css {
+	top: 20%;
+}
+
 .lds-dual-ring {
   position: relative;
 }
+
 .lds-dual-ring div {
   position: absolute;
   width: 120px;
@@ -207,7 +228,7 @@ body {
   left: 40px;
   border-radius: 50%;
   border: 10px solid #000;
-  border-color: #f0641f transparent #f0641f transparent;
+  border-color: #3596f4 transparent #3596f4 transparent;
   -webkit-animation: lds-dual-ring 1s linear infinite;
   animation: lds-dual-ring 1s linear infinite;
 }
@@ -225,4 +246,102 @@ body {
   height: 200px !important;
   -webkit-transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
   transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+}
+
+
+// New: Tips
+
+.tips {
+  overflow: hidden;
+  width: 280px;
+  margin: 0 auto;
+  position: absolute;
+  text-align: center;
+  top: 180px;
+  left: -40px;
+  font-family: 'HK_Grotesk_Regular';
+
+  h2 {
+	  margin-top: 10px;
+	  margin-bottom: 10px;
+	  font-size: 24px;
+  }
+
+  h3 {
+	  margin-top: 10px;
+	  font-size: 18px;
+  }
+
+	.slide-wrapper {
+	  width: 2800px;
+	  -webkit-animation: slide 100.9s ease-out infinite;
+	}
+
+	.slide {
+	  float: left;
+	  width: 280px;
+	}
+
+	.slide-number {
+	  color: #000;
+	  text-align: center;
+	  font-size: 14px;
+	}
+}
+
+@-webkit-keyframes slide {
+	0% {margin-left: -0px;}
+	9.91% {margin-left: -0px;}
+	10.01% {margin-left: -280px;}
+	19.92% {margin-left: -280px;}
+	20.02% {margin-left: -560px;}
+	29.93% {margin-left: -560px;}
+	30.03% {margin-left: -840px;}
+	39.94% {margin-left: -840px;}
+	40.04% {margin-left: -1120px;}
+	49.95% {margin-left: -1120px;}
+	50.05% {margin-left: -1400px;}
+	59.96% {margin-left: -1400px;}
+	60.06% {margin-left: -1680px;}
+	69.97% {margin-left: -1680px;}
+	70.07% {margin-left: -1960px;}
+	79.98% {margin-left: -1960px;}
+	80.08% {margin-left: -2240px;}
+	89.99% {margin-left: -2240px;}
+	90.09% {margin-left: -2520px;}
+	100% {margin-left: -2520px;}
+}
+
+
+// Progress
+.main-spinner .progress {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	margin-bottom: 0;
+	border-radius: 0;
+
+	.progress-bar {
+		background-color: #3596f4;
+		animation-name: progress;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+	}
+}
+
+
+// Class-based timings
+body.progress-short .main-spinner .progress-bar {
+	animation-duration: 5s;
+}
+
+body.progress-long .main-spinner .progress-bar {
+	animation-duration: 120s;
+}
+
+
+@-webkit-keyframes progress {
+  50% {width: 50%;}
+  100% {width: 100%;}
 }
