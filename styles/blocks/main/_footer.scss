@@ -26,10 +26,14 @@
   }
 }
 .footer-povered {
-  float: right;
-  margin-left: 10px;
   vertical-align: middle;
+
+  @include respond-from(sm) {
+    float: right;
+    margin-left: 10px;
+  }
 }
+
 .footer-povered-text {
   display: inline-block;
   margin-right: 8px;
@@ -41,6 +45,10 @@
 }
 .footer-text {
   float: left;
-  margin: 0;
-  margin-right: 10px;
+  margin: 7px 90px 10px 0;
+  line-height: 1.2em;
+
+  @include respond-from(sm) {
+    margin-right: 0;
+  }
 }
