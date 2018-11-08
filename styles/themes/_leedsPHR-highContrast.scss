@@ -1,0 +1,196 @@
+// High Contrast Variants
+// HC Variants are indented and suffixed with '-highcontrast'
+
+$dodger-blue-highcontrast: #000;
+$lucky-point-highcontrast: #fff;
+$white-highcontrast: #ffffff;
+
+$base-color-highcontrast: $dodger-blue-highcontrast;
+$auxiliary-color-highcontrast: $base-color-highcontrast;
+
+$table-color-highcontrast: $base-color-highcontrast;
+$table-text-highcontrast: #fff;
+
+$colored-table-highcontrast: (
+  bg: #ffffff,
+  color: $table-text-highcontrast,
+  border-color: #fff,
+  border-width: 1px,
+
+  header-bg: #e0e0e0,
+  header-color: #333,
+  header-highlighted-bg: darken(#e0e0e0, 10%),
+  header-highlighted-color: #333,
+
+  row-bg: #ffffff,
+  row-odd-bg: #ffffff,
+  row-hover-bg: $auxiliary-color-highcontrast,
+  row-odd-hover-bg: $auxiliary-color-highcontrast,
+  row-color: $table-text-highcontrast,
+  row-odd-color: $table-text-highcontrast,
+  row-hover-color: #fff,
+  row-odd-hover-color: #fff,
+
+  row-sorted-bg: lighten(#e0e0e0, 7%),
+  row-sorted-odd-bg: lighten(#e0e0e0, 7%),
+  row-sorted-hover-bg: $auxiliary-color-highcontrast,
+  row-sorted-odd-hover-bg: $auxiliary-color-highcontrast,
+  row-sorted-color: $table-text-highcontrast,
+  row-sorted-odd-color: $table-text-highcontrast,
+  row-sorted-hover-color: #fff,
+  row-sorted-odd-hover-color: #fff,
+
+  row-highlighted-bg: #b4b4b4,
+  row-highlighted-color: #ffffff,
+);
+
+$text-color-highcontrast: #000;
+$text-on-base-color-highcontrast: #ffffff;
+
+$colored-buttons-highcontrast: (
+    default: #ffffff,
+    primary: #000,
+    success: $base-color-highcontrast,
+    info: #31b0d5,
+    warning: #F0AD4E,
+    danger: #DA534F,
+    theme: $auxiliary-color-highcontrast
+);
+
+$header-bg-highcontrast: $white-highcontrast;
+$header-btn-highcontrast: (
+    bg: $dodger-blue-highcontrast,
+    color: $text-on-base-color-highcontrast,
+    bg-hover: $lucky-point-highcontrast,
+    color-hover: $text-on-base-color-highcontrast,
+    bg-active: $base-color-highcontrast,
+    color-active: $text-on-base-color-highcontrast
+);
+$header-toolbar-highcontrast: (
+    bg: $lucky-point-highcontrast,
+    color: $text-on-base-color-highcontrast,
+);
+
+/**
+  * COLORS for search
+  */
+  $search-btn-highcontrast: (
+      bg: $base-color-highcontrast,
+      color: $text-on-base-color-highcontrast,
+      bg-hover: $auxiliary-color-highcontrast,
+      color-hover: $text-on-base-color-highcontrast
+  );
+  $search-btn-toggle-highcontrast: (
+      bg: $dodger-blue-highcontrast,
+      color: $text-on-base-color-highcontrast,
+      bg-hover: $auxiliary-color-highcontrast,
+      color-hover: $text-on-base-color-highcontrast,
+      border: $base-color-highcontrast,
+      border-hover: $auxiliary-color-highcontrast
+  );
+
+/**
+  * COLORS for footer
+  */
+  $footer-highcontrast: (
+    bg: $white-highcontrast,
+    color: #5c5c5c
+  );
+
+/**
+  * COLORS for dashboard
+  */
+  $board-highcontrast: (
+    border: #c9c8c8,
+    radius: 4px,
+    header-bg: $base-color-highcontrast,
+    header-color: $text-on-base-color-highcontrast,
+    preview-ratio: 60%,
+    item-bg: $white-highcontrast,
+    item-odd-bg: $white-highcontrast,
+    item-color: $text-color-highcontrast,
+    item-bg-hover: $auxiliary-color-highcontrast,
+    item-color-hover: $white-highcontrast,
+  );
+
+/**
+  * COLORS for panels
+  */
+  $panel-border-color-highcontrast: #E5E5E5;
+  $panel-heading-bg-highcontrast: $base-color-highcontrast;
+  $panel-heading-color-highcontrast: $text-on-base-color-highcontrast;
+  $panel-control-bg-highcontrast: transparent;
+  $panels-highcontrast: (
+    panel-default: (
+      bg: #fff,
+      heading-bg: $base-color-highcontrast,
+      heading-color: $text-on-base-color-highcontrast,
+      border-color: $base-color-highcontrast,
+      border-width: 2px,
+      border-radius: 0,
+      control-bg: $panel-control-bg-highcontrast
+    ),
+    panel-primary: (
+      bg: transparent,
+      heading-bg: $panel-heading-bg-highcontrast,
+      heading-color: $panel-heading-color-highcontrast,
+      border-color: transparent,
+      border-width: 0,
+      border-radius: 0,
+      control-bg: transparent
+    ),
+    panel-secondary: (
+      bg: #fff,
+      heading-bg: $panel-heading-bg-highcontrast,
+      heading-color: $panel-heading-color-highcontrast,
+      border-color: $panel-border-color-highcontrast,
+      border-width: 1px,
+      border-radius: 0,
+      control-bg: $panel-control-bg-highcontrast
+    ),
+    panel-subaccordion: (
+      bg: #fff,
+      heading-bg: $panel-heading-bg-highcontrast,
+      heading-color: $panel-heading-color-highcontrast,
+      border-color: transparent,
+      border-width: 0,
+      border-radius: 3px,
+      control-bg: $panel-control-bg-highcontrast
+    ),
+    panel-small: (
+      bg: #fff,
+      heading-bg: $panel-heading-bg-highcontrast,
+      heading-color: $panel-heading-color-highcontrast,
+      border-color: $panel-border-color-highcontrast,
+      border-width: 1px,
+      border-radius: 0,
+      control-bg: $panel-control-bg-highcontrast
+    )
+  );
+
+/**
+  * COLORS for forms
+  */
+  $forms-highcontrast: (
+    bg: #fff,
+    color: #555555,
+    disabled-bg: #ebebeb,
+    disabled-color: #5c5c5c,
+    readonly-bg: #fff,
+    readonly-color: #555,
+
+    border-color: #E5E5E5,
+    border-error-color: #a94442,
+    border-success-color: #2b542c,
+    border-width: 1px,
+    border-radius: 4px,
+    addon-color: #222,
+    label-color: #333,
+    label-control-color: #333,
+    label-required-color: #a32d44,
+    control-static-color: #333,
+  );
+
+body.themeLeedsPHR.high-contrast {
+  @import 'theme-leedsPHR-highContrast/index';
+}

@@ -1,0 +1,24 @@
+.form-control {
+  height: 36px;
+  line-height: 20px;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.form-control-static {
+  font-size: 13px;
+}
+
+.textarea-big { height: 104px; }
+
+.inner-addon .addon {
+  height: 36px;
+  line-height: 36px;
+  color: $base-color;
+}
+
+label.control-label {
+  font-size: 14px;
+}

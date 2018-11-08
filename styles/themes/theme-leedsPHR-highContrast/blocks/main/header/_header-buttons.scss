@@ -1,0 +1,24 @@
+.btn-header {
+  height: $header-height;
+  line-height: $header-height;
+  @include respond-from(xs) {
+    width: $header-height;
+  }
+}
+.btn-header-prev {
+  width: $header-height;
+  text-align: center;
+  background: #1993EF;
+  color: #fff;
+  font-size: 26px;
+  position: relative;
+
+  /* Icon not centering on iOS, css fix applied below to absolute position */
+  i {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 15px;
+  }
+}
