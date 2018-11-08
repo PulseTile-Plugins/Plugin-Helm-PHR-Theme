@@ -2,15 +2,15 @@
   table {
     button {
       &.active {
-        background: $base-color !important;
-        border-color: $base-color !important;
-        color: $text-on-base-color !important;
+        background: $base-color-highcontrast !important;
+        border-color: $base-color-highcontrast !important;
+        color: $text-on-base-color-highcontrast !important;
         span {
-          color: $text-on-base-color;
+          color: $text-on-base-color-highcontrast;
         }
       }
-      &.btn-info { color: $text-on-base-color !important; }
-      .text-info { color: $base-color; }
+      &.btn-info { color: $text-on-base-color-highcontrast !important; }
+      .text-info { color: $base-color-highcontrast; }
     }
   }
 }

@@ -6,17 +6,17 @@
       background-color: white;
     }
     .text {
-      color: $text-color;
+      color: $text-color-highcontrast;
     }
   }
   input:checked + .slider {
-    background-color: $base-color;
-    border-color: $base-color;
+    background-color: $base-color-highcontrast;
+    border-color: $base-color-highcontrast;
     .text {
-      color: $text-on-base-color;
+      color: $text-on-base-color-highcontrast;
     }
   }
   input:focus + .slider {
-    box-shadow: 0 0 1px $base-color;
+    box-shadow: 0 0 1px $base-color-highcontrast;
   }
 }

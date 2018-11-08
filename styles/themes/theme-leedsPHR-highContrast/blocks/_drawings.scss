@@ -7,17 +7,17 @@
 .btn.btn-drawing {
   color: #828282;
   &.active {
-    background: $base-color;
-    color: $text-on-base-color;
+    background: $base-color-highcontrast;
+    color: $text-on-base-color-highcontrast;
   }
   &.btn-drawing-delete {
-    background: map-get($colored-buttons, 'danger') !important;
-    color: $text-on-base-color !important;
+    background: map-get($colored-buttons-highcontrast, 'danger') !important;
+    color: $text-on-base-color-highcontrast !important;
   }
 }
 .is-not-touch-device .btn.btn-drawing:hover {
-  background: $base-color;
-  color: $text-on-base-color;
+  background: $base-color-highcontrast;
+  color: $text-on-base-color-highcontrast;
 }
 .drawing-label {
   color: #828282;
@@ -27,6 +27,6 @@
   background: #ffffff;
   border-color: #e4e4e4;
   &.active {
-    border-color: $base-color;
+    border-color: $base-color-highcontrast;
   }
 }

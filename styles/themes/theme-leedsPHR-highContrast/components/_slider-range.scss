@@ -6,16 +6,16 @@
   .rz-bar {
     background: #f3f3f3;
   }
-  .rz-selection { background: $base-color; }
+  .rz-selection { background: $base-color-highcontrast; }
   .rz-pointer {
-    background-color: $base-color;
-    &:focus { background: $auxiliary-color; }
+    background-color: $base-color-highcontrast;
+    &:focus { background: $auxiliary-color-highcontrast; }
   }
   .rz-tick-value {
-    color: $text-color;
+    color: $text-color-highcontrast;
   }
   .rz-limit {
-    color: $text-color;
+    color: $text-color-highcontrast;
   }
   .rz-bubble:not(.rz-limit) {
     background: #ffffff;
@@ -29,35 +29,35 @@
     border-top-color: #c3c3c3; 
   }
   .rz-tick {
-    background: $base-color;
+    background: $base-color-highcontrast;
   }
-  .rz-tick.rz-selected { background: $base-color; }
+  .rz-tick.rz-selected { background: $base-color-highcontrast; }
 }
 
 .rc-slider-track {
-  background: $base-color;
+  background: $base-color-highcontrast;
 }
 
 .rc-slider-dot-active {
-  border-color: $base-color;
+  border-color: $base-color-highcontrast;
 }
 
 .rc-slider-dot {
-  border-color: $base-color;
-  background-color: $base-color;
+  border-color: $base-color-highcontrast;
+  background-color: $base-color-highcontrast;
 }
 
 .rc-slider-handle {
-  border-color: $base-color;
-  background-color: $base-color;
+  border-color: $base-color-highcontrast;
+  background-color: $base-color-highcontrast;
 }
 
 .rc-slider-handle {
   &:active {
-    background: $auxiliary-color;
-    box-shadow: 0 0 0 $auxiliary-color;
+    background: $auxiliary-color-highcontrast;
+    box-shadow: 0 0 0 $auxiliary-color-highcontrast;
   }
   &:hover {
-    border-color: $base-color;
+    border-color: $base-color-highcontrast;
   }
 }

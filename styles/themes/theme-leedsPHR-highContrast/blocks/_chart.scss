@@ -5,11 +5,11 @@
   }
 }
 .chart-title-group {
-  color: $text-color;
+  color: $text-color-highcontrast;
 }
 .chart-title {
-  color: $text-color;
+  color: $text-color-highcontrast;
 }
 .chart-subtitle {
-  color: lighten($text-color, 30%);
+  color: lighten($text-color-highcontrast, 30%);
 }

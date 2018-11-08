@@ -1,6 +1,6 @@
 .table thead tr th {
   padding: 11px 4px 11px 5px;
-  font-family: $font-semibold;
+  font-family: $font-semibold-highcontrast;
 
   @include respond-from(sm) {
     padding: 11px 4px 11px 10px;
@@ -16,12 +16,12 @@
   tbody td:before {
     @include respond-to(sm) {
       width: 120px;
-      font-family: $font-semibold;
+      font-family: $font-semibold-highcontrast;
     }
   }
 
   tbody tr {
-    border-bottom: map-get($colored-table, 'border-width') solid map-get($colored-table, 'border-color');
+    border-bottom: map-get($colored-table-highcontrast, 'border-width') solid map-get($colored-table-highcontrast, 'border-color');
 
     @include respond-from(sm) {
       border-bottom: none;
@@ -37,8 +37,8 @@
   }
 
     @include respond-from(sm) {
-      padding-bottom: 10px - map-get($colored-table, 'border-width');
-      border-bottom: map-get($colored-table, 'border-width') solid map-get($colored-table, 'border-color');
+      padding-bottom: 10px - map-get($colored-table-highcontrast, 'border-width');
+      border-bottom: map-get($colored-table-highcontrast, 'border-width') solid map-get($colored-table-highcontrast, 'border-color');
     }
   }
 }
@@ -50,7 +50,7 @@
 .table > tbody > tr.info > td,
 .table > tfoot > tr.info > td,
 .table > tbody > tr.info {
-  border-color: $auxiliary-color;
+  border-color: $auxiliary-color-highcontrast;
 }
 
 .table-striped {
@@ -61,7 +61,7 @@
   tbody > tr:nth-of-type(odd).info > td,
   tfoot > tr:nth-of-type(odd).info > td,
   tbody > tr:nth-of-type(odd).info {
-    border-color: $auxiliary-color;
+    border-color: $auxiliary-color-highcontrast;
   }
 }
 .table-striped.table-hover {
@@ -69,13 +69,13 @@
     tr {
       &:hover td[data-table-hover],
       &.hovered td[data-table-hover] {
-        border-color: $auxiliary-color;
+        border-color: $auxiliary-color-highcontrast;
       }
     }
     tr:nth-of-type(odd) {
       &:hover td[data-table-hover],
       &.hovered td[data-table-hover] {
-        border-color: $auxiliary-color;
+        border-color: $auxiliary-color-highcontrast;
       }
     }
   }
@@ -89,14 +89,14 @@
 .is-not-touch-device .table-hover > tbody > tr:hover > td[ng-click],
 .is-not-touch-device .table-hover > tbody > tr[ng-click]:hover,
 .is-not-touch-device .table-hover > tbody > tr.hovered {
-  border-color: $auxiliary-color;
+  border-color: $auxiliary-color-highcontrast;
 }
 
 @include respond-from(xs) {
   .table-sorted.table-striped.table-hover tbody {
     tr.hovered td.sorted,
     tr:hover td.sorted {
-      border-color: $auxiliary-color;
+      border-color: $auxiliary-color-highcontrast;
     }
   }
 }

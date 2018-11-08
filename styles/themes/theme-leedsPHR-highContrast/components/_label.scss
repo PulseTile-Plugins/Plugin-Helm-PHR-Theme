@@ -1,9 +1,9 @@
-@each $section, $color in $colored-buttons {
-  .label-#{$section} {
-    background: $color;
+@each $section-highcontrast, $color-highcontrast in $colored-buttons-highcontrast {
+  .label-#{$section-highcontrast} {
+    background: $color-highcontrast;
     color: #ffffff;
   }
 }
 .label-default {
-  color: $text-color;
+  color: $text-color-highcontrast;
 }

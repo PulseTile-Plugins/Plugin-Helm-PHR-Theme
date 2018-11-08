@@ -1,5 +1,5 @@
 .page-banner {
-  background-color: $base-color;
+  background-color: $base-color-highcontrast;
   height: inherit;
   padding: 0;
   position: relative;
@@ -13,7 +13,7 @@
     line-height: 1.6em;
     color: #fff;
     position: relative;
-    font-family: $font-medium;
+    font-family: $font-medium-highcontrast;
   }
 
   &__subtitle {

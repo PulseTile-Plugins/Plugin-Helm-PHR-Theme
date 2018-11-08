@@ -3,9 +3,9 @@
     .btn-dropdown-toggle,
     .btn-dropdown-toggle:hover,
     .btn-dropdown-toggle:focus {
-      background: $base-color !important;
+      background: $base-color-highcontrast !important;
       &:after {
-        color: $text-on-base-color
+        color: $text-on-base-color-highcontrast
       }
     }
   }

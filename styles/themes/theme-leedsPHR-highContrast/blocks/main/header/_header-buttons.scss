@@ -1,12 +1,12 @@
 .btn-header {
-  height: $header-height;
-  line-height: $header-height;
+  height: $header-height-highcontrast;
+  line-height: $header-height-highcontrast;
   @include respond-from(xs) {
-    width: $header-height;
+    width: $header-height-highcontrast;
   }
 }
 .btn-header-prev {
-  width: $header-height;
+  width: $header-height-highcontrast;
   text-align: center;
   background: #1993EF;
   color: #fff;

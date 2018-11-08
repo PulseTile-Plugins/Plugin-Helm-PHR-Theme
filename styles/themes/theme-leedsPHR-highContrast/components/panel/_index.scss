@@ -1,6 +1,6 @@
 .panel {
-  @each $label, $panel in $panels {
-    &.#{$label} {
+  @each $label-highcontrast, $panel-highcontrast in $panels-highcontrast {
+    &.#{$label-highcontrast} {
       box-shadow: 0 1px 1px rgba(#000, 0.21);
     }
   }

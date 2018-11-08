@@ -6,9 +6,9 @@
     color: #3596f4;
   }
   &.active .pagination-link {
-    background-color: $base-color;
-    border-color: $base-color;
-    color: $text-on-base-color;
+    background-color: $base-color-highcontrast;
+    border-color: $base-color-highcontrast;
+    color: $text-on-base-color-highcontrast;
   }
   &.disabled .pagination-link {
     background-color: #fff;
@@ -20,13 +20,13 @@
   &:not(.disabled):hover { z-index: 2; }
   & .pagination-link:hover,
   &.active .pagination-link:hover {
-    background-color: $base-color;
-    border-color: $base-color;
-    color: $text-on-base-color;
+    background-color: $base-color-highcontrast;
+    border-color: $base-color-highcontrast;
+    color: $text-on-base-color-highcontrast;
   }
   &.disabled .pagination-link:hover {
     background-color: #F4F3F3;
     border-color: #ddd;
-    color: $text-color;
+    color: $text-color-highcontrast;
   }
 }

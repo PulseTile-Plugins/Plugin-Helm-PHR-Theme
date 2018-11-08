@@ -2,23 +2,23 @@
   padding: 11px 12px;
 
   @include respond-from(sm) {
-    border-left: 1px solid $panel-border-color;
+    border-left: 1px solid $panel-border-color-highcontrast;
     padding: 11px 14px;
   }
 }
 
   .patient-info-caption {
-    color: $text-on-base-color;
+    color: $text-on-base-color-highcontrast;
 
     .text-truncate,
     .btn-dropdown-toggle {
-      color: $text-color;
+      color: $text-color-highcontrast;
     }
   }
 
   .patient-info-item {
     font-size: 13px;
-    font-family: $font-semibold;
+    font-family: $font-semibold-highcontrast;
     font-weight: 400;
 
     &.significant {

@@ -2,20 +2,14 @@
 // HC Variants are indented and suffixed with '-highcontrast'
 
 $dodger-blue: #3596f4;
-  $dodger-blue-highcontrast: #000;
-
 $lucky-point: #fff;
 $white: #ffffff;
 
 $base-color: $dodger-blue;
-  $base-color-highcontrast: $dodger-blue-highcontrast;
 $auxiliary-color: $base-color;
-  $auxiliary-color-highcontrast: $base-color-highcontrast;
 
 $table-color: lighten($base-color, 40%);
-  $table-color-highcontrast: $base-color-highcontrast;
 $table-text: #3E3E3E;
-  $table-text-highcontrast: #fff;
 
 $colored-table: (
   bg: #ffffff,
@@ -235,8 +229,4 @@ $font-regular: 'HK_Grotesk_Regular', sans-serif;
 body.themeLeedsPHR {
   @import 'theme-source/index';
   @import 'theme-leedsPHR/index';
-
-  &.high-contrast {
-    @import 'theme-leedsPHR-highContrast/index';
-  }
 }

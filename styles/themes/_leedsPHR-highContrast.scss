@@ -191,6 +191,17 @@ $header-toolbar-highcontrast: (
     control-static-color: #333,
   );
 
+  // Custom Fonts
+  //@import 'theme-leedsPHR-highContrast/custom-fonts';
+
+  // Unused font have been commented out to reduce size. To use them, please also uncomment the lines below AND @font-face within _custom-fonts.scss
+  //$font-bold: 'HK_Grotesk_Bold', sans-serif;
+  //$font-light: 'HK_Grotesk_Light', sans-serif;
+  $font-medium-highcontrast: 'HK_Grotesk_Medium', sans-serif;
+  $font-semibold-highcontrast: 'HK_Grotesk_SemiBold', sans-serif;
+  $font-regular-highcontrast: 'HK_Grotesk_Regular', sans-serif;
+
+
 body.themeLeedsPHR.high-contrast {
   @import 'theme-leedsPHR-highContrast/index';
 }

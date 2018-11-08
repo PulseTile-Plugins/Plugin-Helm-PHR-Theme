@@ -1,4 +1,4 @@
-$highlighterColor: (
+$highlighterColor-highcontrast: (
   default: #ccc,
   warning: #ffbf00,
   danger: #ff2626,
@@ -6,12 +6,12 @@ $highlighterColor: (
 );
 
 .highlighter {
-  background-color: map-get($highlighterColor, 'default');
+  background-color: map-get($highlighterColor-highcontrast, 'default');
 }
-@each $highlighter, $color in $highlighterColor {
-  .highlighter-#{$highlighter} {
+@each $highlighter-highcontrast, $color-highcontrast in $highlighterColor-highcontrast {
+  .highlighter-#{$highlighter-highcontrast} {
     @extend .highlighter;
-    background-color: $color;
+    background-color: $color-highcontrast;
   }
 }
 .highlighter-not-vital {

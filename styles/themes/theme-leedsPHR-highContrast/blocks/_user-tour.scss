@@ -7,7 +7,7 @@
   button {
 
     &:hover {
-      color: $text-color !important;
+      color: $text-color-highcontrast !important;
     }
 
     &[title="Next"],
@@ -16,8 +16,8 @@
       border-radius: 25px !important;
 
       &:hover {
-        background-color: $base-color !important;
-        color: $text-on-base-color !important;
+        background-color: $base-color-highcontrast !important;
+        color: $text-on-base-color-highcontrast !important;
       }
     }
   }
