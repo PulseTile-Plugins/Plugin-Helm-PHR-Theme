@@ -1,11 +1,5 @@
 .btn-header {
-  height: $header-height-highcontrast;
-  line-height: $header-height-highcontrast;
   color: $text-color-highcontrast;
-
-  @include respond-from(xs) {
-    width: $header-height-highcontrast;
-  }
 }
 
 .btn-header:hover {
@@ -36,19 +30,6 @@
 }
 
 .btn-header-prev {
-  width: $header-height-highcontrast;
-  text-align: center;
   background: $dodger-blue-highcontrast;
-  font-size: 26px;
-  position: relative;
   color: $text-on-base-color-highcontrast;
-
-  /* Icon not centering on iOS, css fix applied below to absolute position */
-  i {
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 15px;
-  }
 }

@@ -1,7 +1,3 @@
-.btn {
-  font-family: $font-semibold-highcontrast;
-}
-
 @each $button, $color in $colored-buttons-highcontrast {
   .btn-#{$button},
   .btn-#{$button}:hover,

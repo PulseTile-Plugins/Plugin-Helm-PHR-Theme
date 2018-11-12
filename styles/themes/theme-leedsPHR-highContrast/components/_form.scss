@@ -1,22 +1,13 @@
 .form-control {
-  height: 36px;
-  line-height: 20px;
-  padding-bottom: 7px;
-  padding-top: 7px;
-  font-size: 13px;
-  font-weight: 300;
   background: map-get($forms-highcontrast, 'bg');
   color: map-get($forms-highcontrast, 'color');
   border-color: map-get($forms-highcontrast, 'border-color');
-  border-width: map-get($forms-highcontrast, 'border-width');
-  border-radius: map-get($forms-highcontrast, 'border-radius');
 }
 
 .has-error .form-control { border-color: map-get($forms-highcontrast, 'border-error-color') };
 .has-success .form-control:focus { border-color: map-get($forms-highcontrast, 'border-success-color') };
 
 label.control-label {
-  font-size: 14px;
   color: map-get($forms, 'label-control-color');
 }
 
@@ -34,19 +25,13 @@ label.control-label {
 .form-control[disabled] {
   background-color: map-get($forms-highcontrast, 'disabled-bg') !important;
   color: map-get($forms-highcontrast, 'disabled-color') !important;
-  opacity: 1;
 }
 
 .form-control-static {
-  font-size: 13px;
   color: map-get($forms-highcontrast, 'control-static-color');
   a { color: map-get($forms-highcontrast, 'control-static-color'); }
 }
 
-.textarea-big { height: 104px; }
-
 .inner-addon .addon {
-  height: 36px;
-  line-height: 36px;
   color: $base-color-highcontrast;
 }
