@@ -124,7 +124,7 @@ $header-toolbar-highcontrast: (
     panel-default: (
       bg: #fff,
       heading-bg: $base-color-highcontrast,
-      heading-color: $text-on-base-color-highcontrast,
+      heading-color: $panel-heading-color-highcontrast,
       border-color: $base-color-highcontrast,
       border-width: 2px,
       border-radius: 0,
@@ -133,7 +133,7 @@ $header-toolbar-highcontrast: (
     panel-primary: (
       bg: transparent,
       heading-bg: $panel-heading-bg-highcontrast,
-      heading-color: $text-color-highcontrast,
+      heading-color: $panel-heading-color-highcontrast,
       border-color: transparent,
       border-width: 0,
       border-radius: 0,

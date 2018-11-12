@@ -11,5 +11,9 @@
 }
 
 .panel-dashboard .panel-heading {
-    background-color: transparent;
+  background-color: transparent;
+
+  .panel-title {
+    color: $text-color-highcontrast !important;
+  }
 }
