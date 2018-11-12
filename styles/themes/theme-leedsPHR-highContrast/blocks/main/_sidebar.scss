@@ -2,6 +2,7 @@
 .btn-toggle-sidebar:focus {
   background: $text-on-base-color-highcontrast;
   color: $base-color-highcontrast;
+  border-color: $base-color-highcontrast;
 }
 
 .btn-toggle-sidebar:hover {
@@ -25,7 +26,6 @@
 .is-not-touch-device .sidebar-nav-link:focus {
   background-color: $base-color-highcontrast;
   color: $text-on-base-color-highcontrast;
-  padding-left: 28px;
 
   &:before {
     color: $text-on-base-color-highcontrast;

@@ -1,3 +1,7 @@
+.btn {
+  font-family: $font-semibold-highcontrast;
+}
+
 @each $button, $color in $colored-buttons-highcontrast {
   .btn-#{$button},
   .btn-#{$button}:hover,
@@ -42,8 +46,8 @@
     &.btn-#{$button}:hover,
     &.btn-#{$button}:focus,
     &.btn-#{$button}:active {
-
       border-color: $color !important;
+      color: #fff;
       &.active {
         color: darken($color, 10%) !important;
         border-color: darken($color, 10%) !important;
@@ -52,35 +56,35 @@
   }
 }
 
-.is-not-touch-device .btn-inverse {
-  @each $button, $color in $colored-buttons-highcontrast {
-    &.btn-#{$button}:hover {
-      color: #fff;
-      border-color: darken($color, 10%) !important;
+  .is-not-touch-device .btn-inverse {
+    @each $button, $color in $colored-buttons-highcontrast {
+      &.btn-#{$button}:hover {
+        color: #fff;
+        border-color: darken($color, 10%) !important;
+      }
     }
   }
-}
 
-.btn-inverse.btn.disabled,
-.btn-inverse.btn[disabled],
-.is-not-touch-device .btn-inverse.btn.disabled:hover,
-.is-not-touch-device .btn-inverse.btn[disabled]:hover {
-  background-color: $white-highcontrast !important;
-  border-color: $text-color-highcontrast !important;
-  color: $text-color-highcontrast !important;
-}
+  .btn-inverse.btn.disabled,
+  .btn-inverse.btn[disabled],
+  .is-not-touch-device .btn-inverse.btn.disabled:hover,
+  .is-not-touch-device .btn-inverse.btn[disabled]:hover {
+    background-color: $white-highcontrast !important;
+    border-color: $text-color-highcontrast !important;
+    color: $text-color-highcontrast !important;
+  }
 
-.is-not-touch-device .btn.btn-inverse,
-.is-not-touch-device .btn.btn-inverse.disabled,
-.is-not-touch-device .btn.btn-inverse[disabled] {
-  &.btn-none-border {
-    &:hover,
-    &:focus,
-    &:active {
-      border-color: $text-color-highcontrast !important;
+  .is-not-touch-device .btn.btn-inverse,
+  .is-not-touch-device .btn.btn-inverse.disabled,
+  .is-not-touch-device .btn.btn-inverse[disabled] {
+    &.btn-none-border {
+      &:hover,
+      &:focus,
+      &:active {
+        border-color: $text-color-highcontrast !important;
+      }
     }
   }
-}
 .has-success .input-group .input-group-btn .btn {
   border-color: map-get($colored-buttons-highcontrast, 'success') !important;
 }

@@ -23,7 +23,7 @@
 .is-not-touch-device {
   .btn-header {
     &:hover {
-      color: map-get($header-btn-highcontrast, 'color');
+      color: map-get($header-btn-highcontrast, 'color-hover');
       background: map-get($header-btn-highcontrast, 'bg');
     }
   }

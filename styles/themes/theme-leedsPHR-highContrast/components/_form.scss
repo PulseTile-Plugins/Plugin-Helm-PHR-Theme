@@ -1,3 +1,7 @@
+.form-group-section.form-group-section-bordered.form-group-section-primary {
+  border-color: $base-color-highcontrast;
+}
+
 .form-control {
   background: map-get($forms-highcontrast, 'bg');
   color: map-get($forms-highcontrast, 'color');
