@@ -4,4 +4,8 @@
   @include respond-from(sm) {
     height: 54px;
   }
+
+  .toggle-high-contrast {
+    font-weight: 600;
+  }
 }

@@ -9,7 +9,7 @@
 .fcustominp {
   label {
     background: #ffffff;
-    border-color: #1993EF;
+    border-color: $dodger-blue-highcontrast;
   }
   input[type=checkbox]:checked + label:after {
     border-color: #389dff;

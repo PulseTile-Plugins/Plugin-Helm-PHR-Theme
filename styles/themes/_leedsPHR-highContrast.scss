@@ -8,13 +8,16 @@ $white-highcontrast: #ffffff;
 $base-color-highcontrast: $dodger-blue-highcontrast;
 $auxiliary-color-highcontrast: $base-color-highcontrast;
 
+$text-color-highcontrast: #000;
+$text-on-base-color-highcontrast: #ffffff;
+
 $table-color-highcontrast: $base-color-highcontrast;
-$table-text-highcontrast: #fff;
+$table-text-highcontrast: $text-color-highcontrast;
 
 $colored-table-highcontrast: (
   bg: #ffffff,
   color: $table-text-highcontrast,
-  border-color: #fff,
+  border-color: #E5E5E5,
   border-width: 1px,
 
   header-bg: #e0e0e0,
@@ -44,23 +47,20 @@ $colored-table-highcontrast: (
   row-highlighted-color: #ffffff,
 );
 
-$text-color-highcontrast: #000;
-$text-on-base-color-highcontrast: #ffffff;
-
 $colored-buttons-highcontrast: (
     default: #ffffff,
-    primary: #000,
+    primary: $base-color-highcontrast,
     success: $base-color-highcontrast,
-    info: #31b0d5,
-    warning: #F0AD4E,
-    danger: #DA534F,
+    info: $base-color-highcontrast,
+    warning: $base-color-highcontrast,
+    danger: $base-color-highcontrast,
     theme: $auxiliary-color-highcontrast
 );
 
 $header-bg-highcontrast: $white-highcontrast;
 $header-btn-highcontrast: (
     bg: $dodger-blue-highcontrast,
-    color: $text-on-base-color-highcontrast,
+    color: $text-color-highcontrast,
     bg-hover: $lucky-point-highcontrast,
     color-hover: $text-on-base-color-highcontrast,
     bg-active: $base-color-highcontrast,
@@ -94,7 +94,7 @@ $header-toolbar-highcontrast: (
   */
   $footer-highcontrast: (
     bg: $white-highcontrast,
-    color: #5c5c5c
+    color: $text-color-highcontrast
   );
 
 /**
@@ -172,23 +172,23 @@ $header-toolbar-highcontrast: (
   * COLORS for forms
   */
   $forms-highcontrast: (
-    bg: #fff,
-    color: #555555,
+    bg: $white-highcontrast,
+    color: $text-color-highcontrast,
     disabled-bg: #ebebeb,
-    disabled-color: #5c5c5c,
-    readonly-bg: #fff,
-    readonly-color: #555,
+    disabled-color: $text-color-highcontrast,
+    readonly-bg: $white-highcontrast,
+    readonly-color: $text-color-highcontrast,
 
-    border-color: #E5E5E5,
+    border-color: $text-color-highcontrast,
     border-error-color: #a94442,
     border-success-color: #2b542c,
     border-width: 1px,
     border-radius: 4px,
-    addon-color: #222,
-    label-color: #333,
-    label-control-color: #333,
+    addon-color: $text-color-highcontrast,
+    label-color: $text-color-highcontrast,
+    label-control-color: $text-color-highcontrast,
     label-required-color: #a32d44,
-    control-static-color: #333,
+    control-static-color: $text-color-highcontrast,
   );
 
   // Custom Fonts
@@ -201,6 +201,8 @@ $header-toolbar-highcontrast: (
   $font-semibold-highcontrast: 'HK_Grotesk_SemiBold', sans-serif;
   $font-regular-highcontrast: 'HK_Grotesk_Regular', sans-serif;
 
+// Bas64 encoded images
+@import 'theme-leedsPHR-highContrast/images';
 
 body.themeLeedsPHR.high-contrast {
   @import 'theme-leedsPHR-highContrast/index';

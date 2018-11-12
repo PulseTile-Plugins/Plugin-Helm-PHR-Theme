@@ -3,3 +3,60 @@
     top: 140px;
   }
 }
+
+@include respond-from(sm) {
+  .btn-toggle-sidebar {
+    border: 1px solid $base-color-highcontrast;
+    border-radius: 25px;
+    margin-left: 32px;
+  }
+}
+
+.btn-toggle-sidebar,
+.btn-toggle-sidebar:focus {
+  background: $text-on-base-color-highcontrast;
+  color: $base-color-highcontrast;
+}
+
+.btn-toggle-sidebar:hover {
+  background: $base-color-highcontrast;
+  color: $text-on-base-color-highcontrast;
+}
+
+.sidebar-nav-item {
+  border-bottom-color: #E7E7E7;
+  position: relative;
+
+  &:after {
+    font-family: 'FontAwesome';
+    content: '\f054';
+    position: absolute;
+    right: 12px;
+    top: 13px;
+    font-size: 11px;
+    color: $text-on-base-color-highcontrast;
+  }
+}
+
+.sidebar-nav-link,
+.sidebar-nav-link:hover {
+  color: $base-color-highcontrast;
+}
+
+.sidebar-nav-link.active,
+.is-not-touch-device .sidebar-nav-link:hover,
+.is-not-touch-device .sidebar-nav-link:focus {
+  background-color: $base-color-highcontrast;
+  color: $text-on-base-color-highcontrast;
+  padding-left: 28px;
+
+  &:before {
+    font-family: FontAwesome;
+    content: '\f111';
+    position: absolute;
+    left: 12px;
+    top: 11px;
+    font-size: 7px;
+    color: $text-on-base-color-highcontrast;
+  }
+}

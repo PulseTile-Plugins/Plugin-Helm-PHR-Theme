@@ -1,0 +1,11 @@
+.wrap-header-toolbar {
+  background: map-get($header-toolbar-highcontrast, 'bg');
+}
+
+.header-toolbar {
+  color: $table-color-highcontrast;
+
+  @include respond-from(sm) {
+    padding: 0 0 0 170px;
+  }
+}

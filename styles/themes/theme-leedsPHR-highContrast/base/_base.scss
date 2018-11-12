@@ -1,3 +1,14 @@
+a,
+a:hover,
+a:focus {
+  color: $base-color-highcontrast;
+}
+
+.is-not-touch-device a:hover,
+.is-not-touch-device a:focus, {
+  color: $text-color-highcontrast;
+}
+
 & {
   font-family: $font-regular-highcontrast;
 }

@@ -1,17 +1,47 @@
 .btn-header {
   height: $header-height-highcontrast;
   line-height: $header-height-highcontrast;
+  color: $text-color-highcontrast;
+
   @include respond-from(xs) {
     width: $header-height-highcontrast;
   }
 }
+
+.btn-header:hover {
+  @include respond-from(md) {
+    color: map-get($header-btn-highcontrast, 'color');
+    background: map-get($header-btn-highcontrast, 'bg');
+  }
+  @include respond-to(xs) {
+    color: map-get($header-btn-highcontrast, 'color');
+    background: map-get($header-btn-highcontrast, 'bg');
+  }
+  &.btn-header-prev {
+    color: map-get($header-btn-highcontrast, 'color');
+    background: map-get($header-btn-highcontrast, 'bg');
+  }
+  &.btn-home {
+    color: map-get($header-btn-highcontrast, 'color');
+    background: map-get($header-btn-highcontrast, 'bg');
+  }
+}
+.is-not-touch-device {
+  .btn-header {
+    &:hover {
+      color: map-get($header-btn-highcontrast, 'color');
+      background: map-get($header-btn-highcontrast, 'bg');
+    }
+  }
+}
+
 .btn-header-prev {
   width: $header-height-highcontrast;
   text-align: center;
-  background: #1993EF;
-  color: #fff;
+  background: $dodger-blue-highcontrast;
   font-size: 26px;
   position: relative;
+  color: $text-on-base-color-highcontrast;
 
   /* Icon not centering on iOS, css fix applied below to absolute position */
   i {

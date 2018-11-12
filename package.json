@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch-images": "cpx \"assets/images/**/*.*\" \"../Helm-PHR-Generator/PulseTile-React-Core/src/assets/images\" --watch --verbose --no-initial",
-    "watch-styles": "cpx \"styles/**/*.*\" \"../Helm-PHR-Generator/PulseTile-React-Core/src/styles\" --watch --verbose --no-initial",
+    "watch-images": "cpx \"assets/images/**/*.*\" \"../Generated/PulseTile-React-Core/src/assets/images\" --watch --verbose --no-initial",
+    "watch-styles": "cpx \"styles/**/*.*\" \"../Generated/PulseTile-React-Core/src/styles\" --watch --verbose --no-initial",
     "watch": "concurrently --kill-others \"npm run watch-images\" \"npm run watch-styles\""
   },
   "repository": {

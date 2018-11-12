@@ -32,16 +32,9 @@
   @include clearfix;
   overflow: hidden;
 
+  // High Contrast Edit
   &:before {
-    content: "";
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    left: 0;
-    right: 0;
-    z-index: 0;
-    background: $blue-ring 0 0 repeat;
-    background-size: contain;
+    background: none;
   }
 
 }
@@ -108,7 +101,7 @@
 }
 
 #summary-panel-medications .board-title:before {
-  background: $icon-pill center center no-repeat;
+  background: $icon-pill-highcontrast center center no-repeat;
 }
 
 #summary-panel-vaccinations .board-title:before {
@@ -123,8 +116,7 @@
   border-top: 1px solid #ccc;
 }
 .board-list-link {
-  line-height: 19px;
-  @include text-truncate;
+  color: $base-color-highcontrast;
 }
 
 .btn-board-more {
