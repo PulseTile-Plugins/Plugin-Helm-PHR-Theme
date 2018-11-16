@@ -1,0 +1,35 @@
+.btn-header {
+  color: $text-color-highcontrast;
+}
+
+.btn-header:hover {
+  @include respond-from(md) {
+    color: map-get($header-btn-highcontrast, 'color');
+    background: map-get($header-btn-highcontrast, 'bg');
+  }
+  @include respond-to(xs) {
+    color: map-get($header-btn-highcontrast, 'color');
+    background: map-get($header-btn-highcontrast, 'bg');
+  }
+  &.btn-header-prev {
+    color: map-get($header-btn-highcontrast, 'color');
+    background: map-get($header-btn-highcontrast, 'bg');
+  }
+  &.btn-home {
+    color: map-get($header-btn-highcontrast, 'color');
+    background: map-get($header-btn-highcontrast, 'bg');
+  }
+}
+.is-not-touch-device {
+  .btn-header {
+    &:hover {
+      color: map-get($header-btn-highcontrast, 'color-hover');
+      background: map-get($header-btn-highcontrast, 'bg');
+    }
+  }
+}
+
+.btn-header-prev {
+  background: $dodger-blue-highcontrast;
+  color: $text-on-base-color-highcontrast;
+}

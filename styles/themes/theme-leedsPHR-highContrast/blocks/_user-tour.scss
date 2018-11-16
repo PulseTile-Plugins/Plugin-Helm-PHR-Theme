@@ -1,0 +1,23 @@
+.joyride-overlay {
+  background-color: rgba(255,255,255,0.7) !important;
+}
+
+.__floater__body {
+
+  button {
+
+    &:hover {
+      color: $text-color-highcontrast !important;
+    }
+
+    &[title="Next"],
+    &[title="Last"] {
+
+      &:hover {
+        background-color: $base-color-highcontrast !important;
+        color: $text-on-base-color-highcontrast !important;
+      }
+    }
+  }
+
+}

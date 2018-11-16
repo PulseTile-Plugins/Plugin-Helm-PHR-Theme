@@ -1,0 +1,41 @@
+.form-group-section.form-group-section-bordered.form-group-section-primary {
+  border-color: $base-color-highcontrast;
+}
+
+.form-control {
+  background: map-get($forms-highcontrast, 'bg');
+  color: map-get($forms-highcontrast, 'color');
+  border-color: map-get($forms-highcontrast, 'border-color');
+}
+
+.has-error .form-control { border-color: map-get($forms-highcontrast, 'border-error-color') };
+.has-success .form-control:focus { border-color: map-get($forms-highcontrast, 'border-success-color') };
+
+label.control-label {
+  color: map-get($forms, 'label-control-color');
+}
+
+.col-inline-label,
+.required-label { color: map-get($forms-highcontrast, 'label-color'); }
+.required-label { color: map-get($forms-highcontrast, 'label-required-color'); }
+
+.form-control.readonly,
+.form-control[readonly] {
+  background-color: map-get($forms-highcontrast, 'readonly-bg') !important;
+  color: map-get($forms-highcontrast, 'readonly-color') !important;
+}
+
+.form-control.disabled,
+.form-control[disabled] {
+  background-color: map-get($forms-highcontrast, 'disabled-bg') !important;
+  color: map-get($forms-highcontrast, 'disabled-color') !important;
+}
+
+.form-control-static {
+  color: map-get($forms-highcontrast, 'control-static-color');
+  a { color: map-get($forms-highcontrast, 'control-static-color'); }
+}
+
+.inner-addon .addon {
+  color: $base-color-highcontrast;
+}

@@ -1,0 +1,4 @@
+.footer {
+  background-color: map-get($footer-highcontrast, 'bg');
+  color: map-get($footer-highcontrast, 'color');
+}

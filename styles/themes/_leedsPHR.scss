@@ -1,3 +1,6 @@
+// High Contrast Variants
+// HC Variants are indented and suffixed with '-highcontrast'
+
 $dodger-blue: #3596f4;
 $lucky-point: #fff;
 $white: #ffffff;
@@ -7,6 +10,7 @@ $auxiliary-color: $base-color;
 
 $table-color: lighten($base-color, 40%);
 $table-text: #3E3E3E;
+
 $colored-table: (
   bg: #ffffff,
   color: $table-text,

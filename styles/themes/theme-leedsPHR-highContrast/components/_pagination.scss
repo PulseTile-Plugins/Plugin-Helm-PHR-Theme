@@ -1,0 +1,20 @@
+.pagination-item {
+  &.active .pagination-link {
+    background-color: $base-color-highcontrast;
+    border-color: $base-color-highcontrast;
+    color: $text-on-base-color-highcontrast;
+  }
+}
+.is-not-touch-device .pagination-item {
+  & .pagination-link:hover,
+  &.active .pagination-link:hover {
+    background-color: $base-color-highcontrast;
+    border-color: $base-color-highcontrast;
+    color: $text-on-base-color-highcontrast;
+  }
+  &.disabled .pagination-link:hover {
+    background-color: #F4F3F3;
+    border-color: #ddd;
+    color: $text-color-highcontrast;
+  }
+}
