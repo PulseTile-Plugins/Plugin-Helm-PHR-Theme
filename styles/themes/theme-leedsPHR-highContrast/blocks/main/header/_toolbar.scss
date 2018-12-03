@@ -1,0 +1,7 @@
+.wrap-header-toolbar {
+  background: map-get($header-toolbar-highcontrast, 'bg');
+}
+
+.header-toolbar {
+  color: $table-color-highcontrast;
+}

@@ -1,0 +1,124 @@
+.table {
+
+  tbody tr td {
+    color: $table-text-highcontrast;
+  }
+
+}
+
+
+.table-striped.table-hover {
+  tbody {
+    tr {
+      &:hover td[data-table-hover],
+      &.hovered td[data-table-hover] {
+        background: $auxiliary-color-highcontrast;
+        border-color: $auxiliary-color-highcontrast;
+      }
+    }
+    tr:nth-of-type(odd) {
+      &:hover td[data-table-hover],
+      &.hovered td[data-table-hover] {
+        background: $auxiliary-color-highcontrast;
+        border-color: $auxiliary-color-highcontrast;
+      }
+    }
+  }
+}
+
+.table > thead > tr > td.info,
+.table > tbody > tr > td.info,
+.table > tfoot > tr > td.info,
+.table > thead > tr > th.info,
+.table > tbody > tr > th.info,
+.table > tfoot > tr > th.info,
+.table > thead > tr.info > td,
+.table > tbody > tr.info > td,
+.table > tfoot > tr.info > td,
+.table > thead > tr.info > th,
+.table > tbody > tr.info > th,
+.table > tfoot > tr.info > th,
+.table > tbody > tr.info {
+  background-color: map-get($colored-table-highcontrast, 'row-hover-bg') !important;
+  border-color: map-get($colored-table-highcontrast, 'row-hover-bg') !important;
+}
+
+.table-striped {
+  background-color: map-get($colored-table-highcontrast, 'row-bg');
+  color: map-get($colored-table-highcontrast, 'row-hover-color');
+
+  tbody {
+    tr {
+      &:nth-of-type(odd) {
+        background-color: map-get($colored-table-highcontrast, 'row-odd-bg');
+        color: map-get($colored-table-highcontrast, 'row-odd-color');
+      }
+    }
+  }
+  thead > tr:nth-of-type(odd) > td.info,
+  tbody > tr:nth-of-type(odd) > td.info,
+  tfoot > tr:nth-of-type(odd) > td.info,
+  thead > tr:nth-of-type(odd) > th.info,
+  tbody > tr:nth-of-type(odd) > th.info,
+  tfoot > tr:nth-of-type(odd) > th.info,
+  thead > tr:nth-of-type(odd).info > td,
+  tbody > tr:nth-of-type(odd).info > td,
+  tfoot > tr:nth-of-type(odd).info > td,
+  thead > tr:nth-of-type(odd).info > th,
+  tbody > tr:nth-of-type(odd).info > th,
+  tfoot > tr:nth-of-type(odd).info > th,
+  tbody > tr:nth-of-type(odd).info {
+    background-color: map-get($colored-table-highcontrast, 'row-odd-hover-bg') !important;
+    border-color: map-get($colored-table-highcontrast, 'row-odd-hover-bg') !important;
+    color: map-get($colored-table-highcontrast, 'row-hover-color') !important;
+  }
+}
+
+.is-not-touch-device .table-hover > tbody > tr > td.info:hover,
+.is-not-touch-device .table-hover > tbody > tr > th.info:hover,
+.is-not-touch-device .table-hover > tbody > tr.info:hover > td,
+.is-not-touch-device .table-hover > tbody > tr:hover > .info,
+.is-not-touch-device .table-hover > tbody > tr.info:hover > th,
+.is-not-touch-device .table-hover > tbody > tr[ng-click]:hover > td,
+.is-not-touch-device .table-hover > tbody > tr:hover > td[ng-click],
+.is-not-touch-device .table-hover > tbody > tr[ng-click]:hover,
+.is-not-touch-device .table-hover > tbody > tr.hovered {
+  background: $auxiliary-color-highcontrast;
+  border-color: $auxiliary-color-highcontrast;
+}
+
+@include respond-from(xs) {
+  .table-sorted {
+    thead tr th {
+      &.sorted {
+        color: map-get($colored-table-highcontrast, 'header-highlighted-color');
+      }
+    }
+    tbody tr td.sorted {
+      color: map-get($colored-table-highcontrast, 'row-sorted-color');
+    }
+    &.table-striped {
+      tbody {
+        tr:nth-of-type(odd) td.sorted {
+          color: map-get($colored-table-highcontrast, 'row-sorted-odd-color');
+        }
+      }
+    }
+    &.table-striped.table-hover {
+      tbody {
+        tr.hovered td.sorted,
+        tr:hover td.sorted {
+          color: map-get($colored-table-highcontrast, 'row-sorted-odd-hover-color');
+        }
+      }
+    }
+  }
+
+  .table-sorted.table-striped.table-hover tbody {
+    tr.hovered td.sorted,
+    tr:hover td.sorted {
+      background: $auxiliary-color-highcontrast;
+      border-color: $auxiliary-color-highcontrast;
+    }
+  }
+}

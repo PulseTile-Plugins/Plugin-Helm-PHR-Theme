@@ -1,0 +1,33 @@
+.btn-toggle-sidebar,
+.btn-toggle-sidebar:focus {
+  background: $text-on-base-color-highcontrast;
+  color: $base-color-highcontrast;
+  border-color: $base-color-highcontrast;
+}
+
+.btn-toggle-sidebar:hover {
+  background: $base-color-highcontrast;
+  color: $text-on-base-color-highcontrast;
+}
+
+.sidebar-nav-item {
+  &:after {
+    color: $text-on-base-color-highcontrast;
+  }
+}
+
+.sidebar-nav-link,
+.sidebar-nav-link:hover {
+  color: $base-color-highcontrast;
+}
+
+.sidebar-nav-link.active,
+.is-not-touch-device .sidebar-nav-link:hover,
+.is-not-touch-device .sidebar-nav-link:focus {
+  background-color: $base-color-highcontrast;
+  color: $text-on-base-color-highcontrast;
+
+  &:before {
+    color: $text-on-base-color-highcontrast;
+  }
+}

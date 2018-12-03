@@ -1,0 +1,19 @@
+.panel-title { color: $text-color; }
+
+@each $label, $panel in $panels-highcontrast {
+  .#{$label} {
+    & > .panel-heading {
+      background-color: map-get($panel, 'heading-bg');
+      color: map-get($panel, 'heading-color');
+    }
+    & .panel-title { color: map-get($panel, 'heading-color'); }
+  }
+}
+
+.panel-dashboard .panel-heading {
+  background-color: transparent;
+
+  .panel-title {
+    color: $text-color-highcontrast !important;
+  }
+}

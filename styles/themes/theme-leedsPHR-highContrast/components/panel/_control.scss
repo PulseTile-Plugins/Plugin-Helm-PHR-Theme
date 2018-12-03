@@ -1,0 +1,5 @@
+@each $label-highcontrast, $panel-highcontrast in $panels-highcontrast {
+  .#{$label-highcontrast} {
+    .panel-control { background: map-get($panel-highcontrast, 'control-bg'); }
+  }
+}

@@ -1,0 +1,104 @@
+.btn {
+  font-family: $font-semibold-highcontrast;
+}
+
+@each $button, $color in $colored-buttons-highcontrast {
+  .btn-#{$button},
+  .btn-#{$button}:hover,
+  .btn-#{$button}:focus,
+  .btn-#{$button}:active {
+    color: $text-on-base-color-highcontrast !important;
+    background-color: $color !important;
+    border-color: $color !important;
+    &.active {
+      background-color: $color !important;
+      border-color: $color !important;
+    }
+  }
+  .btn-default,
+  .btn-default:hover,
+  .btn-default:focus,
+  .btn-default:active { color: $text-color !important; }
+
+  // High Contast modified
+  .is-not-touch-device {
+   .btn-#{$button}:hover {
+      background-color: $color !important;
+      border-color: $color !important;
+    }
+  }
+}
+
+// High Contrast - Leave as is
+.btn.disabled,
+.btn[disabled],
+.is-not-touch-device .btn.disabled:hover,
+.is-not-touch-device .btn[disabled]:hover {
+  background-color: #c3c3c3 !important;
+  border-color: #c3c3c3 !important;
+  color: #ffffff !important;
+  opacity: 1;
+}
+
+.btn-inverse {
+  @each $button, $color in $colored-buttons-highcontrast {
+    &.btn-#{$button},
+    &.btn-#{$button}:hover,
+    &.btn-#{$button}:focus,
+    &.btn-#{$button}:active {
+      border-color: $color !important;
+      color: #fff;
+      &.active {
+        color: darken($color, 10%) !important;
+        border-color: darken($color, 10%) !important;
+      }
+    }
+  }
+}
+
+  .is-not-touch-device .btn-inverse {
+    @each $button, $color in $colored-buttons-highcontrast {
+      &.btn-#{$button}:hover {
+        color: #fff;
+        border-color: darken($color, 10%) !important;
+      }
+    }
+  }
+
+  .btn-inverse.btn.disabled,
+  .btn-inverse.btn[disabled],
+  .is-not-touch-device .btn-inverse.btn.disabled:hover,
+  .is-not-touch-device .btn-inverse.btn[disabled]:hover {
+    background-color: $white-highcontrast !important;
+    border-color: $text-color-highcontrast !important;
+    color: $text-color-highcontrast !important;
+  }
+
+  .is-not-touch-device .btn.btn-inverse,
+  .is-not-touch-device .btn.btn-inverse.disabled,
+  .is-not-touch-device .btn.btn-inverse[disabled] {
+    &.btn-none-border {
+      &:hover,
+      &:focus,
+      &:active {
+        border-color: $text-color-highcontrast !important;
+      }
+    }
+  }
+.has-success .input-group .input-group-btn .btn {
+  border-color: map-get($colored-buttons-highcontrast, 'success') !important;
+}
+.has-error .input-group .input-group-btn .btn {
+  border-color: map-get($colored-buttons-highcontrast, 'danger') !important;
+}
+.btn-success.btn-create,
+.btn-success.btn-create:focus,
+.btn-success.btn-create:active {
+  background: $base-color-highcontrast !important;
+  color: $text-on-base-color-highcontrast !important;
+  &:hover,
+  &.active {
+    background: $base-color-highcontrast !important;
+    color: $text-on-base-color-highcontrast !important;
+  }
+}

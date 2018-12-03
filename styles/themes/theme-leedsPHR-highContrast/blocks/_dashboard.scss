@@ -1,0 +1,28 @@
+.board-header {
+  background-color: $base-color-highcontrast;
+
+  // High Contrast Edit
+  &:before {
+    background: none;
+  }
+}
+
+#summary-panel-problems .board-title:before {
+  background: $icon-clipboard center center no-repeat;
+}
+
+#summary-panel-medications .board-title:before {
+  background: $icon-pill-highcontrast center center no-repeat;
+}
+
+#summary-panel-vaccinations .board-title:before {
+  background: $icon-needle center center no-repeat;
+}
+
+#summary-panel-allergies .board-title:before {
+  background: $icon-flower center center no-repeat;
+}
+
+.board-list-link {
+  color: $base-color-highcontrast;
+}
