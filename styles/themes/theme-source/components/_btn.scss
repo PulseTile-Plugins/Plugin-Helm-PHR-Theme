@@ -21,7 +21,8 @@
   .btn-default:active { color: $text-color !important; }
 
   .is-not-touch-device {
-   .btn-#{$button}:hover {
+   .btn-#{$button}:hover,
+   .btn-#{$button}:focus {
       background-color: darken($color, 10%) !important;
       border-color: darken($color, 10%) !important;
     }
@@ -43,8 +44,6 @@
   border-color: #ccc !important;
   @each $button, $color in $colored-buttons {
     &.btn-#{$button},
-    &.btn-#{$button}:hover,
-    &.btn-#{$button}:focus,
     &.btn-#{$button}:active {
       color: $color !important;
       border-color: $color !important;
@@ -54,6 +53,11 @@
         border-color: darken($color, 10%) !important;
         background: transparent !important;
       }
+    }
+
+    &.btn-#{$button}:focus,
+    &.btn-#{$button}:hover {
+      // border-radius: 0;
     }
   }
   &.btn-none-border {
@@ -68,8 +72,9 @@
 }
 .is-not-touch-device .btn-inverse {
   @each $button, $color in $colored-buttons {
-    &.btn-#{$button}:hover {
-      color: darken($color, 10%) !important;
+    &.btn-#{$button}:hover,
+    &.btn-#{$button}:focus  {
+      color: #fff !important;
       border-color: darken($color, 10%) !important;
     }
   }
