@@ -8,7 +8,8 @@
     color:  map-get($header-btn, 'bg');
   }
 }
-.btn-header:hover {
+.btn-header:hover,
+.btn-header:focus {
   @include respond-from(md) {
     color: map-get($header-btn, 'color');
     background: #1993EF;
@@ -28,7 +29,8 @@
 }
 .is-not-touch-device {
   .btn-header {
-    &:hover {
+    &:hover,
+    &:focus {
       color: map-get($header-btn, 'color');
       background: #1993EF;
       @include respond-from(md) {
@@ -42,5 +44,3 @@
     }
   }
 }
-
-

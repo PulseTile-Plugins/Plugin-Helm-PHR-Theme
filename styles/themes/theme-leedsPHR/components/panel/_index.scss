@@ -15,8 +15,12 @@
       color: #fff !important;
       background: transparent !important;
       box-shadow: none !important;
-      &:hover { color: #fff !important; }
-      &:active, &:focus {
+      &:hover,
+      &:focus {
+        color: #fff !important;
+        background-color: darken($base-color, 10%) !important;
+      }
+      &:active {
         background: transparent !important;
         box-shadow: none !important;
       }
@@ -51,12 +55,15 @@
       width: auto;
       min-width: auto;
       color: #555555 !important;
-      background: transparent !important;
+      background: transparent;
       box-shadow: none !important;
       &:hover { color: #555555 !important; }
-      &:active, &:focus {
+      &:active {
         background: transparent !important;
         box-shadow: none !important;
+      }
+      &:focus {
+        color: $base-color !important;
       }
       &:after {display: none;}
     }

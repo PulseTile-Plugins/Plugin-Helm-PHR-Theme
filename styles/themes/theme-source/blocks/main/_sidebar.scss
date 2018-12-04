@@ -11,13 +11,13 @@
   }
 }
 
-.btn-toggle-sidebar,
-.btn-toggle-sidebar:focus {
+.btn-toggle-sidebar {
   background: $text-on-base-color;
   color: $base-color;
 }
 
-.btn-toggle-sidebar:hover {
+.btn-toggle-sidebar:hover,
+.btn-toggle-sidebar:focus {
   background: $base-color;
   color: $text-on-base-color;
 }
