@@ -2,7 +2,8 @@
   color: $text-color-highcontrast;
 }
 
-.btn-header:hover {
+.btn-header:hover,
+.btn-header:focus {
   @include respond-from(md) {
     color: map-get($header-btn-highcontrast, 'color');
     background: map-get($header-btn-highcontrast, 'bg');
@@ -22,7 +23,8 @@
 }
 .is-not-touch-device {
   .btn-header {
-    &:hover {
+    &:hover,
+    &:focus {
       color: map-get($header-btn-highcontrast, 'color-hover');
       background: map-get($header-btn-highcontrast, 'bg');
     }

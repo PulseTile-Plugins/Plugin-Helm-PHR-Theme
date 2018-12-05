@@ -1,11 +1,11 @@
-.btn-toggle-sidebar,
-.btn-toggle-sidebar:focus {
+.btn-toggle-sidebar {
   background: $text-on-base-color-highcontrast;
   color: $base-color-highcontrast;
   border-color: $base-color-highcontrast;
 }
 
-.btn-toggle-sidebar:hover {
+.btn-toggle-sidebar:hover,
+.btn-toggle-sidebar:focus {
   background: $base-color-highcontrast;
   color: $text-on-base-color-highcontrast;
 }
